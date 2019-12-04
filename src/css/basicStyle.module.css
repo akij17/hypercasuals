@@ -1,0 +1,4 @@
+.boring-a, .boring-a:hover, .boring-a:focus, .boring-a:active{
+    text-decoration: none;
+    color: inherit;
+}
