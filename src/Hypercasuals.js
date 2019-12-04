@@ -23,7 +23,7 @@ class Hypercasuals extends React.Component {
                         <Card banner={image} title="Snake Game"/>
                     </div>
                 </div>
-                <div className="row mt-4">
+                <div className="row mt-4 mb-4">
                     <div className="col">
                         <Card banner={image} title="Snake Game"/>
                     </div>
