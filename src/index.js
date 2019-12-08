@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import Snake from './Snake';
+import Snake from './components/games/snake/Snake';
+import Game from './components/Game';
 import Hypercasuals from './Hypercasuals';
 
 const App = () => {
@@ -10,10 +11,13 @@ const App = () => {
         <div>
             <Router>
                 <Switch>
-                    <Route path="/snake" component={Snake} />
+                    <Route 
+                        path="/snake"
+                        render={(props) => <Game game={Snake} gameName="Snake"/>}
+                    />
                 </Switch>  
             </Router>
-            <Hypercasuals />
+            <Hypercasuals title="HyperCasuals"/>
         </div>
     );
 }

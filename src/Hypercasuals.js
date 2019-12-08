@@ -5,13 +5,18 @@ import snakeBannerImage from './assets/banners/snake-banner.jpg';
 
 
 class Hypercasuals extends React.Component {
+
+    constructor(props){
+        super(props);
+    }
+
     render() {
         const image = {
             url: snakeBannerImage
         }
         return (
             <div className="container">
-                <h1 className="text-center mt-4">Hypercasuals</h1>
+                <h1 className="text-center mt-4">{this.props.title}</h1>
                 <div className="row mt-5">
                     <div className="col">
                         <Card banner={image} title="Snake Game"/>
